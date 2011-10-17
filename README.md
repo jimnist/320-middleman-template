@@ -17,4 +17,6 @@ $ mkdir ~/.middleman
 $ git clone git://github.com/gn0m30/320-middleman-template.git ~/.middleman/320
 ```
 
+example site build with raw template is available [here](http://gn0m30.github.com/320-middleman-template/).
+
 _replace the contents of this file with the appropriate description of your site when you generate one._

@@ -34,11 +34,15 @@
 <body>
 
   <div id="container">
-    <%= partial "header" %>
+    <header>
+      <%= partial "header" %>
+    </header>
     <div id="main" role="main">
       <%= yield %>
     </div>
-    <%= partial "footer" %>
+    <footer>
+      <%= partial "footer" %>
+    </footer>
   </div> <!--! end of #container -->
 
 

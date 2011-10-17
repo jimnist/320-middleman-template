@@ -31,3 +31,11 @@ div[role="main"] {
 footer { 
 	@if $debuggering { background: $orangina; } 
 }
+
+// these files will override each other so that we get the right css for the viewport
+@import "partials/media/320";  // default 
+@media only screen and (min-width: 480px)  { @import "partials/media/480"; }
+@media only screen and (min-width: 600px)  { @import "partials/media/600"; }
+@media only screen and (min-width: 768px)  { @import "partials/media/768"; }
+@media only screen and (min-width: 992px)  { @import "partials/media/992"; }
+@media only screen and (min-width: 1382px) { @import "partials/media/1382"; }

@@ -6,7 +6,8 @@ a __middleman init__ template that was orignally generated with [middleman](http
 $ middleman init kitchen_sink --template=html5 --css-dir=css --js-dir=js --images-dir=img --rack --bundler
 ```
 
-then it has been modified to support all that plus [compass](http://compass-style.org/) with [blueprint](http://blueprintcss.org/) and [320andup](http://stuffandnonsense.co.uk/projects/320andup/).
+then it has been modified to support all that plus [compass](http://compass-style.org/) with [blueprint](http://blueprintcss.org/) and [320andup](http://stuffandnonsense.co.uk/projects/320andup/).  well, really, 
+we just use the basic ideas behind 320 and up here.
 
 __NOTE 320andup support is in process__
 

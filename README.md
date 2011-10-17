@@ -8,4 +8,4 @@ middleman init kitchen_sink --template=html5 --css-dir=css --js-dir=js --images-
 
 then it has been modified to support all that plus compass and blueprint.
 
-replace the contents of this file with the appropriate description of your site when you generate one.
+_replace the contents of this file with the appropriate description of your site when you generate one._

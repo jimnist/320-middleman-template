@@ -8,7 +8,7 @@ $ middleman init kitchen_sink --template=html5 --css-dir=css --js-dir=js --image
 
 then it has been modified to support all that plus [compass](http://compass-style.org/) with [blueprint](http://blueprintcss.org/) and [320andup](http://stuffandnonsense.co.uk/projects/320andup/).
 
-__NOTE 320 support is not yet implemented__
+__NOTE 320andup support is in process__
 
 i set this up on my machine something like this:
 

@@ -9,7 +9,7 @@ $ middleman init kitchen_sink --template=html5 --css-dir=css --js-dir=js --image
 then it has been modified to support all that plus [compass](http://compass-style.org/) with [blueprint](http://blueprintcss.org/) and [320andup](http://stuffandnonsense.co.uk/projects/320andup/).  well, really, 
 we just use the basic ideas behind 320 and up here.
 
-__NOTE 320andup support is in process__
+__NOTE__ iOS support has not been dealt with but should be very easy to add (see [320andup](http://stuffandnonsense.co.uk/projects/320andup/))
 
 i set this up on my machine something like this:
 

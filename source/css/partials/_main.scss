@@ -4,36 +4,43 @@
 @import "blueprint/debug";
 
 @import "partials/base";
+@import "partials/media/debugging";
 
-// set up blueprint grid
-$blueprint-grid-columns: 24;
-$blueprint-container-size: 950px;
+// blueprint defaults, that in fact, don't change
 $blueprint-grid-margin: 10px;
+
+// size the blueprint grid here for 320px view, our default
+// values calculated using http://bgg.kematzy.com/
+//
+// grid strategy is to make the columns close to the 
+// same size for each grid width.
+//
+$blueprint-grid-columns: 5;
+$blueprint-container-size: 316px;
+
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / 
-                        $blueprint-grid-columns - $blueprint-grid-margin;
+                      $blueprint-grid-columns - $blueprint-grid-margin;
 
-// $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
-
-header, footer, div[role="main"] { @include container; }
+$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 
 header { 
 	margin-top: 6px;
-	@if $debuggering { background: $limon; } 
+	@if $blueprint_debugging { background: $limon; } 
 }
 
 div[role="main"] { 
-	@if $debuggering { 
+	@if $blueprint_debugging { 
 		background: $lemon; 
-		@include showgrid; 
-	} 
+		@include showgrid; } 
 }
 
 footer { 
-	@if $debuggering { background: $orangina; } 
+	@if $blueprint_debugging { background: $orangina; } 
 }
 
-// these files will override each other so that we get the right css for the viewport
-@import "partials/media/320";  // default 
+// these files will override defaults and each other so that we get the 
+// right css for the viewport size
+//
 @media only screen and (min-width: 480px)  { @import "partials/media/480"; }
 @media only screen and (min-width: 600px)  { @import "partials/media/600"; }
 @media only screen and (min-width: 768px)  { @import "partials/media/768"; }

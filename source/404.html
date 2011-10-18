@@ -28,6 +28,14 @@
       </ul>
     </div>
 
+      <script>
+    // Respond.js
+    yepnope({
+      test : Modernizr.mq('(min-width)'),
+      nope : ['js/libs/respond.min.js']
+    });
+  </script>
+
     <script>
       var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),
       GOOG_FIXURL_SITE = location.host;

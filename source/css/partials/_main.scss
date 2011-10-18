@@ -6,7 +6,7 @@
 @import "partials/base";
 @import "partials/media/debugging";
 
-// blueprint defaults, that in fact, don't change
+// blueprint default(s), that in fact, don't change
 $blueprint-grid-margin: 10px;
 
 // size the blueprint grid here for 320px view, our default
@@ -18,17 +18,13 @@ $blueprint-grid-margin: 10px;
 $blueprint-grid-columns: 5;
 $blueprint-container-size: 316px;
 
-$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / 
-                      $blueprint-grid-columns - $blueprint-grid-margin;
-
-$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
-
 header { 
 	margin-top: 6px;
 	@if $blueprint_debugging { background: $limon; } 
 }
 
 div[role="main"] { 
+	min-height: 300px; 
 	@if $blueprint_debugging { 
 		background: $lemon; 
 		@include showgrid; } 
@@ -37,6 +33,9 @@ div[role="main"] {
 footer { 
 	@if $blueprint_debugging { background: $orangina; } 
 }
+
+// takes care of our default size, 320
+@include set_media_options('320');
 
 // these files will override defaults and each other so that we get the 
 // right css for the viewport size
